@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-$END$
+<div id="main-div">
+    <div id="email">
+        <h3>Email</h3>
+        <input type="email" id="my-email" placeholder="E-mail">
+    </div>
+
+    <div class="student-name">
+        <h3>Student Name</h3>
+        <div class="f-l-name">
+            <input type="text" id="name-iput" placeholder="firstName">
+            <input type="text" id="name-iput" placeholder="lastName">
+        </div>
+    </div>
+
+    <div class="month-date">
+        <div class="month">
+            <h3>Month</h3>
+            <label for="months">Please Select</label>
+            <select name="months" id="months">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+            </select>
+        </div>
+
+        <div class="date">
+            <h3>Date</h3>
+            <input type="datetime-local" id="dates" placeholder="Please select">
+        </div>
+    </div>
+
+    <div id="status">
+        <h3>Status</h3>
+        <div class="my-status">
+            <input type="checkbox" checked id="checkbox"/>
+            <p>Attended</p>
+        </div>
+
+        <div class="my-status">
+            <input type="checkbox" checked id="checkbox"/>
+            <p>Skipped</p>
+        </div>
+    </div>
+
+    <hr class="profile-line">
+
+    <button id>Record Attendance</button>
+
+    <div class ="clear">
+        <button id>clear words </button>
+
+    </div>
+</div>
+
 </body>
-</html>
+</html
