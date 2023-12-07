@@ -43,7 +43,7 @@ public class AttendanceManagementService {
 
     @Transactional
     public ResponseEntity<String> updateUser(Long id, String userName, String newName) {
-        int updatedCount = attendanceManagementRepository.updateUserById(id, userName, newName);
+        int updatedCount = userRepository.updateUserById(id, userName, newName);
 
         if (updatedCount > 0) {
             return ResponseEntity.ok("User updated successfully");
