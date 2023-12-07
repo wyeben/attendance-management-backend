@@ -54,7 +54,7 @@ public class AttendanceManagementService {
 
     @Transactional
     public ResponseEntity<String> deleteUser(Long id) {
-        int successful = attendanceManagementRepository.deleteByUserId(id);
+        int successful = userRepository.deleteByUserId(id);
         if (successful > 0) {
             return ResponseEntity.ok("User deleted successfully");
         } else {
