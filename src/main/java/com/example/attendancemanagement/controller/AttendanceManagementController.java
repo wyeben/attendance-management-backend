@@ -46,9 +46,9 @@ public class AttendanceManagementController {
         return attendanceManagementService.updateUser(id, userName, newName);
     }
 
-    @DeleteMapping("delete/{id}")
-    public ResponseEntity<String> deleteUserById(@PathVariable Long id) {
-        return attendanceManagementService.deleteUser(id);
+    @DeleteMapping("delete/{userId}")
+    public ResponseEntity<String> deleteUserById(@PathVariable Long userId) {
+        return attendanceManagementService.deleteUser(userId);
     }
 //    @PostMapping("save-attendance")
 //    public ResponseEntity<String> saveAttendance(@RequestBody AttendanceRequest attendanceRequest) {

@@ -8,9 +8,9 @@ import org.springframework.data.repository.query.Param;
 
 public interface AttendanceManagementRepository extends JpaRepository<AttendanceManagement, Long> {
 
-    @Modifying
-    @Query("UPDATE User u SET u.firstName = :newName WHERE u.id = :id AND u.firstName = :firstName")
-    int updateUserById(@Param("id") Long id, @Param("firstName") String firstName, @Param("newName") String newName);
-
-    int deleteByUserId(Long id);
+//    @Modifying
+//    @Query("UPDATE User u SET u.firstName = :newName WHERE u.id = :id AND u.firstName = :firstName")
+//    int updateUserById(@Param("id") Long id, @Param("firstName") String firstName, @Param("newName") String newName);
+//
+//    int deleteByUserId(Long id);
 }
