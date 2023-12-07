@@ -14,5 +14,5 @@ public interface UserRepository extends JpaRepository<User, Long> {
     int updateUserById(@Param("id") Long id, @Param("firstName") String firstName, @Param("newName") String newName);
 
 
-
+    int deleteByUserId(Long id);
 }
