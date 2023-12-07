@@ -40,14 +40,14 @@ public class AttendanceManagementController {
     }
 
     @PutMapping("update-user/{id}/{userName}/{newName}")
-    public ResponseEntity<String> updateUserByEmail(@PathVariable Long id,
+    public ResponseEntity<String> updateUserById(@PathVariable Long id,
                                                     @PathVariable String userName,
                                                     @PathVariable String newName) {
         return attendanceManagementService.updateUser(id, userName, newName);
     }
 
     @DeleteMapping("delete/{id}")
-    public ResponseEntity<String> deleteUserByEmail(@PathVariable Long id) {
+    public ResponseEntity<String> deleteUserById(@PathVariable Long id) {
         return attendanceManagementService.deleteUser(id);
     }
 //    @PostMapping("save-attendance")
